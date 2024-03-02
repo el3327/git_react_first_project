@@ -1,9 +1,11 @@
+import s from './Profile.module.css';
+
 const Profile = () => {
   return (
-    <div className="content">
-      <div>
+    <div className={s.content}>
+      <div className={s.picture}>
         <img
-          src="https://a.cdn-hotels.com/gdcs/production49/d1115/384d7c82-7494-45d7-8eb8-b2d46be78a33.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+          src="https://vacationtomaldives.com/wp-content/uploads/maldives-beaches.jpg"
           alt="logo"
         />
       </div>
@@ -11,9 +13,9 @@ const Profile = () => {
       <div>
         my posts
         <div>new post</div>
-        <div>
-          <div>post 1</div>
-          <div>post 2</div>
+        <div className={s.posts}>
+          <div className={s.item}>post 1</div>
+          <div className={s.item}>post 2</div>
         </div>
       </div>
     </div>
